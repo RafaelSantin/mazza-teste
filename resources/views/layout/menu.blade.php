@@ -32,20 +32,12 @@
 			                </div>
 			                <div id="navbar" class="navbar-collapse collapse">
 			                    <ul class="nav navbar-nav">
-			                        <li class="active"><a href="/agendamento" class="">Agendamentos</a></li>			
+			                        <li class="active"><a href="/" class="">Agendamentos</a></li>			
 			                        <li><a href="/listarPacientes">Pacientes</a></li>
 			                        <li><a href="/listarMedicos">Médicos</a></li>
 			                        <li><a href="/listarUsuarios">Usuários</a></li>			                        
 			                    </ul>
-			                    <ul class="nav navbar-nav pull-right">
-			                        <li class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed in as  <span class="caret"></span></a>
-			                            <ul class="dropdown-menu">
-			                                <li><a href="#">Change Password</a></li>
-			                                <li><a href="#">My Profile</a></li>
-			                            </ul>
-			                        </li>
-			                        <li class=""><a href="#">Logout</a></li>
-			                    </ul>
+			      
 			                </div>
 			            </div>
 			        </nav>

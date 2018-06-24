@@ -11,20 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/ind', function () {
-    return view('index');
-});
-
-Route::get('/agendamento', function () {	
-    return view('agendamento');
-});
 
 
-Route::get('/listarAgendamentos', ['as' => 'listarAgendamentos', 'uses'=> 'scheduleController@openPage']);
+Route::get('/', ['as' => 'listarAgendamentos', 'uses'=> 'scheduleController@openPage']);
 
 Route::get('/listarMedicos', function () {
     return view('doctor.doctorList');
@@ -32,6 +21,10 @@ Route::get('/listarMedicos', function () {
 
 Route::get('/listarUsuarios', function () {
     return view('doctor.userList');
+});
+
+Route::get('/listarPacientes', function () {
+    return view('doctor.patientList');
 });
 
 Route::post('/api/listDoctors', ['as' => 'listDoctors', 'uses'=> 'DoctorController@apiGetDoctors']);
