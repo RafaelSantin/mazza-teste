@@ -34,6 +34,8 @@ Route::get('/listarUsuarios', function () {
     return view('doctor.userList');
 });
 
+Route::post('/api/listDoctors', ['as' => 'listDoctors', 'uses'=> 'DoctorController@apiGetDoctors']);
+
 Route::post('/insertDoctor', ['as' => 'storeDoctors', 'uses'=> 'DoctorController@store']);
 Route::post('/updateDoctor', ['as' => 'updateDoctors', 'uses'=> 'DoctorController@update']);
 Route::post('/deleteDoctor', ['as' => 'deleteDoctors', 'uses'=> 'DoctorController@destroy']);

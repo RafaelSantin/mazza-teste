@@ -20,6 +20,22 @@ class DoctorController extends Controller
         Log::debug($doctors);
 
         return json_encode($doctors);
+    }    
+
+    public function apiGetDoctors(Request $request)
+    {
+        $token = md5('token_simples_para_teste');
+
+        if($request->token == $token)
+        {
+            $doctors = Doctors::get();
+            Log::debug($doctors);
+
+            return json_encode($doctors);
+        }else{
+            return 'sem acesso';
+        }
+        
     }
 
     /**
